@@ -1,0 +1,135 @@
+body {
+  font-family: "OpenSansCondensedLight", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*//////////////////////
+ * video */
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+/*//////////////////////
+ * timer */
+.container_time {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  z-index: 2;
+}
+.container_time h1 {
+  font-size: 8em;
+  letter-spacing: 4px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/*//////////////////////
+ * soc icons */
+.container_soc_icons {
+  position: absolute;
+  top: 45%;
+  z-index: 3;
+}
+.container_soc_icons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container_soc_icons li {
+  padding: 5px 10px;
+}
+.container_soc_icons li:hover .fa-wikipedia-w {
+  background-color: white;
+  color: black;
+}
+.container_soc_icons li:hover .fa-facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: white;
+}
+.container_soc_icons li:hover .fa-twitter {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+  color: white;
+}
+.container_soc_icons li .fa {
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background-color: transparent;
+  transition: all 0.4s ease;
+}
+
+/*//////////////////////
+ * footer */
+.container_footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+.container_footer h5 {
+  margin: 0;
+  padding: 0 30px 10px 0;
+  font-size: 12px;
+  color: #cccccc;
+  letter-spacing: 1px;
+}

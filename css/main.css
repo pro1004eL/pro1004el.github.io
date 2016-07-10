@@ -61,19 +61,59 @@ body {
 
 /*//////////////////////
  * timer */
-.container_time {
-  position: absolute;
-  width: 100%;
+.countdown-container {
+  position: relative;
   top: 35%;
   z-index: 2;
+  text-align: center;
 }
-.container_time h1 {
+.countdown-container h1 {
   font-size: 8em;
   letter-spacing: 4px;
   text-align: center;
   color: white;
   margin: 0;
   padding: 0;
+}
+
+.clock-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+.clock-item .inner {
+  position: relative;
+  height: 170px;
+  width: 170px;
+}
+
+.clock-canvas {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 25%;
+  text-align: center;
+  width: 100%;
+}
+.text p {
+  margin: 0;
+  padding: 0;
+}
+
+.text .val {
+  font-size: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: 1.08;
+  letter-spacing: 3px;
+}
+
+.text .type-time {
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 /*//////////////////////

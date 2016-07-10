@@ -66,6 +66,47 @@ $(document).ready(function() {
   }
 
   
- 
+
+
+var nowD = new Date().getTime()/1000;
+var evro2020 = new Date(2020,5,15,0,0,0,0).getTime()/1000;
+var start2016 = new Date(2016,6,10,0,0,0,0).getTime()/1000;
+
+
+// timer 
+ $('.countdown').final_countdown({
+                'start': Math.round(start2016),
+                'end': Math.round(evro2020),
+                'now': Math.round(nowD),
+                selectors: {
+                value_seconds: '.clock-seconds .val',
+                canvas_seconds: 'canvas-seconds',
+                value_minutes: '.clock-minutes .val',
+                canvas_minutes: 'canvas-minutes',
+                value_hours: '.clock-hours .val',
+                canvas_hours: 'canvas-hours',
+                value_days: '.clock-days .val',
+                canvas_days: 'canvas-days'
+                },
+                seconds: {
+                  borderColor: '#fff',
+                  borderWidth: '3'
+                },
+                minutes: {
+                  borderColor: '#fff',
+                  borderWidth: '3'
+                },
+                hours: {
+                  borderColor: '#fff',
+                  borderWidth: '3'
+                },
+                days: {
+                  borderColor: '#fff',
+                  borderWidth: '3'
+                }
+        }, function() {
+                // Finish Callback
+        });
+
 	
-});
+});// ready end

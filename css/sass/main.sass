@@ -10,7 +10,6 @@ body
 	-webkit-font-smoothing: antialiased
 
 
-
 /*//////////////////////
 		video
 //////////////////////*/
@@ -60,11 +59,11 @@ body
 /*//////////////////////
 		timer
 //////////////////////*/
-.container_time
-	position: absolute
-	width: 100%
+.countdown-container 
+	position: relative
 	top: 35%
 	z-index: 2
+	text-align: center
 	h1
 		font-size: 8em
 		letter-spacing: 4px
@@ -72,6 +71,42 @@ body
 		color: #fff
 		margin: 0
 		padding: 0
+
+.clock-item 
+	display: inline-block
+	margin-right: 30px
+	.inner 
+		position: relative
+		height: 170px
+		width: 170px
+
+.clock-canvas 
+	background-color: rgba(255, 255, 255, .06)
+	border-radius: 50%
+
+
+.text 
+	color: #fff
+	position: absolute
+	top: 25%
+	text-align: center
+	width: 100%
+	p 
+		margin: 0
+		padding: 0
+
+.text .val 
+	font-size: 60px
+	font-family: "Open Sans", sans-serif
+	font-weight: normal
+	line-height: 1.08
+	letter-spacing: 3px
+
+.text .type-time 
+	font-size: 16px
+	letter-spacing: 1px
+		
+	
 
 /*//////////////////////
 		soc icons
@@ -124,3 +159,5 @@ body
 		font-size: 12px
 		color: #ccc
 		letter-spacing: 1px
+
+
